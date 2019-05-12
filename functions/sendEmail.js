@@ -20,12 +20,12 @@ async function sendMessage(email, message, title) {
       `
     });
     if (send) {
-      console.log("message sent successfully");
-      return { status: 200, msg: "sent successufly" };
+      console.log("message sent successfully.");
+      return { status: 200, msg: "sent successufly." };
     }
   } catch (err) {
     console.log(err);
-    return { status: 500, msg: "faliled to send" };
+    return { status: 500, msg: "faliled to send." };
   }
 }
 
